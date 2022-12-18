@@ -1,0 +1,12 @@
+.container {
+}
+.form-row {
+  padding: 10px 0;
+  display: flex;
+}
+.form-row label {
+  /* flex: 1; */
+}
+.form-row input {
+  flex: 1;
+}
