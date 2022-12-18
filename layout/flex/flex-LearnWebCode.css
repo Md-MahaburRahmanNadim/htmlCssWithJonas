@@ -63,3 +63,34 @@ h3 {
   flex: 1;
   order: 3;
 }
+/* third example */
+.call-outs-container {
+  max-width: 1400px;
+  margin: 40px auto 0 auto;
+  display: flex;
+  /* to change the evenly column size we use align-item */
+  /* align-items: stretch; it's a defult value which give us evenly size columns */
+  /* align-items: center; */
+  /* how we create gap between those column? */
+  justify-content: space-between; /* to create gup we need some free space which is not abalable here. To create free space we need to reduce the size of those colum by defining width or (flex-box es width which is flex-basics)*/
+}
+
+.call-out {
+  padding: 20px;
+  /* if we have padding and margin also width then we need to specifi the box-sizing:border-box so that it fit it's original size */
+  box-sizing: border-box;
+  /* flex: 1;
+  it's create evely size column so if it excit 3 column then it will create 3 column of equal size. To create uneven size column we need to remove flex:1 and use flex-basis: 30%;
+  */
+  /* width: 30%; */
+  flex-basis: 30%;
+}
+.call-out:nth-child(1) {
+  background-color: #c0dbe2;
+}
+.call-out:nth-child(2) {
+  background-color: #cdf1c3;
+}
+.call-out:nth-child(3) {
+  background-color: #ccb9da;
+}
