@@ -67,14 +67,29 @@ h3 {
 .call-outs-container {
   max-width: 1400px;
   margin: 40px auto 0 auto;
-  display: flex;
-  /* to change the evenly column size we use align-item */
-  /* align-items: stretch; it's a defult value which give us evenly size columns */
-  /* align-items: center; */
-  /* how we create gap between those column? */
-  justify-content: space-between; /* to create gup we need some free space which is not abalable here. To create free space we need to reduce the size of those colum by defining width or (flex-box es width which is flex-basics)*/
 }
 
+/* lets create mobile responsive layout via media quary */
+/* @media (max-width: 768px) {
+  .call-outs-container {
+    flex-direction: column;
+  }
+  .call-out {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+} */
+/* // here we reboke the display and justify-content property below 900px it will not applied */
+@media (min-width: 900px) {
+  .call-outs-container {
+    display: flex;
+    /* to change the evenly column size we use align-item */
+    /* align-items: stretch; it's a defult value which give us evenly size columns */
+    /* align-items: center; */
+    /* how we create gap between those column? */
+    justify-content: space-between; /* to create gup we need some free space which is not abalable here. To create free space we need to reduce the size of those colum by defining width or (flex-box es width which is flex-basics)*/
+  }
+}
 .call-out {
   padding: 20px;
   /* if we have padding and margin also width then we need to specifi the box-sizing:border-box so that it fit it's original size */
@@ -82,9 +97,12 @@ h3 {
   /* flex: 1;
   it's create evely size column so if it excit 3 column then it will create 3 column of equal size. To create uneven size column we need to remove flex:1 and use flex-basis: 30%;
   */
-  /* width: 30%; */
+  /* width: 30%; 
+  width === flex-basis 
+  */
   flex-basis: 30%;
 }
+
 .call-out:nth-child(1) {
   background-color: #c0dbe2;
 }
