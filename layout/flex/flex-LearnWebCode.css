@@ -161,3 +161,39 @@ h3 {
   /* just a flex item property margin:auto */
   margin: auto;
 }
+/* sixth example */
+.equal-height-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.first {
+  background-color: #fff;
+  padding: 20px;
+  flex: 1;
+  /* flex:1 is equally distribute all avlable space in between flex container flex item 
+  here first and second is the 2 item of the equal-height flex container.
+  */
+}
+
+.second {
+  background-color: yellow;
+  flex: 1;
+  /* the second item also has 2 child item which need to fit vartically the inter second container what can we do? 
+  also we need to make the second item flex container and make the child item flex item. 
+  we need to use flex-direction: column; 
+  */
+  display: flex;
+  flex-direction: column;
+}
+
+.second-a {
+  background-color: #c0dbe2;
+  flex: 1;
+}
+
+.second-b {
+  background-color: #cdf1c3;
+  flex: 1;
+}
