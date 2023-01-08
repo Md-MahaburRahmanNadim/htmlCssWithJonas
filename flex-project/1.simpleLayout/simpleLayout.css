@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.header {
+  flex: 1;
+  background-color: #f00;
+}
+
+.footer {
+  flex: 1;
+  background-color: #0f0;
+}
+.main {
+  flex: 10;
+  background-color: #00f;
+}
+.aside {
+  flex: 1;
+  background-color: #ff0;
+}
+.aside1 {
+  flex: 1;
+  background-color: #f0f;
+}
+.aside2 {
+  flex: 1;
+  background-color: #0ff;
+}
